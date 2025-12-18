@@ -2,7 +2,11 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import HomePage from '../views/HomePage.vue'
 import AboutPage from '@/views/AboutPage.vue';
-import CookiesView from '@/views/legal/CookiesView.vue';
+import PrivacidadPage from '@/views/legal/PrivacidadPage.vue';
+import ContactPage from '@/views/ContactPage.vue';
+import LegalPage from '@/views/legal/LegalPage.vue';
+import CookiesPage from '@/views/legal/CookiesPage.vue';
+import LoginPage from '@/views/LoginPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -20,7 +24,23 @@ const routes: Array<RouteRecordRaw> = [
   },{
     path: '/cookies',
     name: 'cookies',
-    component: CookiesView
+    component: CookiesPage
+  },{
+    path: '/legal',
+    name: 'legal',
+    component: LegalPage
+  },{
+    path: '/privacidad',
+    name: 'privacidad',
+    component: PrivacidadPage
+  },{
+    path: '/contact',
+    name: 'contact',
+    component: ContactPage
+  },{
+    path: '/login',
+    name: 'login',
+    component: LoginPage
   }
 ]
 
