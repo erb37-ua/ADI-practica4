@@ -37,3 +37,18 @@ html, body, ion-app{
 ion-card-title{
     color: #000;
 }
+/* Listas: que no pinten fondo oscuro por defecto */
+ion-list{
+  --background: transparent;
+}
+
+ion-item{
+  --background: transparent;
+  --ion-item-background: transparent;
+}
+
+/* A veces el fondo lo pinta el "native" */
+ion-item::part(native){
+  background: transparent;
+}
+
