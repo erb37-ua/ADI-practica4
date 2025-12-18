@@ -59,7 +59,7 @@
 
     import { personCircleOutline } from 'ionicons/icons';
 
-    import yoImg from '/public/yo.jpeg';
+    import yoImg from '/yo.jpeg';
 </script>
 
 <style scoped src="./about.css"></style>
