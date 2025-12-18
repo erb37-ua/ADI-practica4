@@ -3,6 +3,8 @@ import { RouteRecordRaw } from 'vue-router';
 import HomePage from '../views/HomePage.vue'
 import AboutPage from '@/views/AboutPage.vue';
 import CookiesView from '@/views/legal/CookiesView.vue';
+import RecipeDetailPage from '../views/RecipeDetailPage.vue';
+import ListPage from '../views/ListPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -14,6 +16,10 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     component: HomePage
   },{
+    path: '/recipe/:id',
+    name: 'RecipeDetail',
+    component: RecipeDetailPage
+  },{
     path: '/about',
     name: 'About',
     component: AboutPage
@@ -21,6 +27,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/cookies',
     name: 'cookies',
     component: CookiesView
+  },{
+    path: '/list',
+    name: 'List',
+    component: ListPage
   }
 ]
 
